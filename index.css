@@ -1,0 +1,77 @@
+/* 
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    align-items: center;
+    text-align: center;
+}
+#square{
+    width: 350px;
+    height: 530px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    align-items: center;
+    margin: auto;
+}
+#square h2{
+    color: hsl(218, 44%, 22%);
+    font-family: 'Outfit', sans-serif;
+}
+#square p{
+    color: hsl(220, 15%, 55%);
+    font-family: 'Outfit', sans-serif;
+    Font-size: 15px;
+}
+#square img{
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+#square{
+    background-color:  hsl(0, 0%, 100%);
+
+} */
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Adicione uma margem zero para evitar espaçamento extra */
+}
+
+#square {
+    width: 90%; /* Use uma largura relativa */
+    max-width: 350px; /* Defina uma largura máxima para evitar que o elemento cresça demais em telas grandes */
+    height: auto; /* Ajuste a altura automaticamente com base no conteúdo */
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    align-items: center;
+    margin: 30px auto; /* Adicione um espaçamento na parte superior e inferior e centralize horizontalmente */
+    padding: 20px; /* Adicione um espaçamento interno para separar o conteúdo das bordas */
+}
+
+#square h2 {
+    color: hsl(218, 44%, 22%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px; /* Ajuste o tamanho da fonte para diferentes tamanhos de tela */
+}
+
+#square p {
+    color: hsl(220, 15%, 55%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px; /* Ajuste o tamanho da fonte para diferentes tamanhos de tela */
+}
+
+#square img {
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 100%; /* Defina a largura da imagem para preencher completamente o elemento pai */
+    height: auto; /* Ajuste a altura automaticamente com base na largura para manter a proporção */
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    #square {
+        max-width: 100%; /* Em telas menores, ocupe toda a largura disponível */
+    }
+}
